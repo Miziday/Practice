@@ -5,7 +5,7 @@ pipeline {
         stage('Test button page') {
             steps {
                     dir('POM\\tests') {
-                        sh 'pytest -f test_button_page.py'
+                        sh 'pytest'
                     }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage ('Test like a button page') {
             steps {
                 dir('POM\\tests') {
-                        sh 'pytest -f test_like_a_button_page.py'
+                        sh 'pytest'
                     }
             }
         }
